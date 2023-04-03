@@ -1,3 +1,3 @@
 # HMOGP-LV
 
-To-do: merge all revelant code and experiment into this repository,
+To-do: merge all revelant codes and experiments into this repository,
