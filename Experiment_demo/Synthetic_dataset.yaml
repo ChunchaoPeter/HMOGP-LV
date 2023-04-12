@@ -1,0 +1,30 @@
+SYN:
+  NUM_REPLICATES: 2 ## The number of replicates
+  NUM_OUTPUTS: 4 ## The number of outputs
+  TRAIN_PERCENTAGE: 0.5
+  NUM_DATA_IN_REPLICATES: 4
+  LINE_RANGE: 1
+  NOISE: [0.02]
+MODEL:
+  Q: 2  ## The dimension of H
+  GAP: 2 ## The gap used for the number of inducing points
+OPTIMIZATION:
+  TRAINING_NUM_EACH_STEP: 1000
+PATH:
+  SAVING_GENERAL: /<your_path>/Dataset/Play_HMOGPLV_a_few_data_points/   # Output directory
+  LOSS: /Loss/HMOGPLV                           # Output loss directory
+  PARAMETERS: /Model_parameter/HMOGPLV                                 # Output parameters directory
+  PLOT: /All-plot/HMOGPLV                         # Output plot directory
+  RESULT: /Result/HMOGPLV/                             # Output result directory
+  DATA_PATH: /<your_path>/Dataset/
+MISC:
+  NUM_REPETITION: 3  ## The number of repetition
+  NUM_KERNEL: 2
+  MR: 2
+  MODEL_NAME: HMOGPLV
+  DATA_NAME: Synthetic_different_input
+  EXPERIMENTTYPE: Train_test_in_each_replica
+  NUM_SAMPLED: 10
+  VARIANCE_BOUND: 1e-6
+
+ 
